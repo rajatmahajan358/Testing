@@ -1,11 +1,10 @@
 //A = "${env.BUILD_NUMBER}"
-A = 4
 pipeline{
     agent any
     stages{
         stage('This is stage One'){
             environment{
-                A = 2
+                A = 4
             }
             steps{
                 script{
