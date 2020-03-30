@@ -1,1 +1,1 @@
-echo "Hello"
+echo "This is in different directory"
