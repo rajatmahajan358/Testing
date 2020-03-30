@@ -10,7 +10,7 @@ else{
     node{
         stage('Stage2'){
             echo "ODD"
-            sh /scripts/Hello.sh
+            sh Hello.sh
                     }
                 }
             }
