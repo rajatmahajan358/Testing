@@ -10,7 +10,7 @@ else{
     node{
         stage('Stage2'){
             echo "ODD"
-            //cd scripts
+            cd scripts | ls
             //sh Hello.sh
                     }
                 }
