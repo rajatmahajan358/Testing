@@ -7,11 +7,11 @@ pipeline{
             }
             steps{
                 script{
-                    if (A==2){
-                        echo "A is even"
+                    if (BUILD_NUMBER % 2 == 0){
+                        echo "Build is even"
                     }
                     else{
-                        echo "A is odd"
+                        echo "Build is odd"
                     }
                 }
             }
