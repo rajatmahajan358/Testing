@@ -8,7 +8,7 @@ pipeline{
             }
             steps{
                 script{
-                    if (A == 0){
+                    if (A == 43){
                         echo "Build is even"
                         sh "bash ./Hello.sh"
                     }
