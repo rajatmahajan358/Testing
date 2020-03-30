@@ -1,3 +1,4 @@
+A = ${env.BUILD_NUMBER} % 2
 pipeline{
     agent any
     stages{
@@ -7,7 +8,7 @@ pipeline{
             }
             steps{
                 script{
-                    if (${env.BUILD_NUMBER} % 2 == 0){
+                    if (A == 0){
                         echo "Build is even"
                     }
                     else{
