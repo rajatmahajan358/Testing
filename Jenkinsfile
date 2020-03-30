@@ -1,16 +1,20 @@
-A = 2
-if(A == 32){
-    node{
-        stage('Stage1'){
-            echo "EVEN"
+pipeline{
+    agent any
+    stages{
+        stage('This is stage One'){
+            environment{
+                A = 2
+            }
+            steps{
+                script{
+                    if (A==2){
+                        echo "A is even"
+                    }
+                    else{
+                        echo "A is odd"
                     }
                 }
             }
-else{
-    node{
-        stage('Stage2'){
-            echo "ODD"
-            sh('Hello.sh')
-                    }
-                }
-            }
+        }
+    }
+}
