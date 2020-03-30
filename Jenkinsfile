@@ -1,4 +1,4 @@
-A = ${env.BUILD_NUMBER}
+A = "${env.BUILD_NUMBER}"
 pipeline{
     agent any
     stages{
