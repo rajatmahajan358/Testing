@@ -1,5 +1,5 @@
 A = 2
-if(A == 2){
+if(A == 32){
     node{
         stage('Stage1'){
             echo "EVEN"
