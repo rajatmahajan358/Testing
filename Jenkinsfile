@@ -1,4 +1,5 @@
-A = "${env.BUILD_NUMBER}"
+//A = "${env.BUILD_NUMBER}"
+A = 4
 pipeline{
     agent any
     stages{
@@ -8,7 +9,7 @@ pipeline{
             }
             steps{
                 script{
-                    if (A == 43){
+                    if (A == 4){
                         echo "Build is even"
                         sh "bash ./Hello.sh"
                     }
