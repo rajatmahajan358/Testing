@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('This is stage One'){
             environment{
-                
+              B=15  
             }
             steps{
                 script{
