@@ -11,6 +11,7 @@ pipeline{
                     if (A == 40){
                         echo "Build is even"
                         sh "pwd"
+                        sh "ls"
                         sh "bash ./Hello.sh"
                     }
                     else{
