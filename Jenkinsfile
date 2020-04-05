@@ -10,7 +10,7 @@ pipeline{
                 script{
                     if (A == 40){
                         echo "Build is even"
-                        sh "cd scripts"
+                        sh "cd /scripts"
                         sh "bash ./Hello.sh"
                     }
                     else{
