@@ -12,7 +12,7 @@ pipeline{
                         echo "Build is even"
                         sh "pwd"
                         sh "ls"
-                        sh "bash ./Hello.sh"
+                        sh "bash scripts/Hello.sh"
                     }
                     else{
                         echo "Build is odd"
