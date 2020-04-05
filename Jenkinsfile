@@ -11,7 +11,7 @@ pipeline{
                     if (A == 40){
                         echo "Build is even"
                         
-                        //sh "bash ./Hello.sh"
+                        sh "bash ./Hello.sh"
                     }
                     else{
                         echo "Build is odd"
